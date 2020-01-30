@@ -1,0 +1,65 @@
+#clear workspace:
+rm(list=ls()) 
+
+#set working directory
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+
+#init constants coding (copied from matlab files)
+CONDITION_REL <- 21; lockBinding("CONDITION_REL", globalenv())
+CONDITION_IRR <- 22; lockBinding("CONDITION_IRR", globalenv())
+CONDITION_SHORT <- 0.6; lockBinding("CONDITION_SHORT", globalenv())
+CONDITION_LONG <- 1; lockBinding("CONDITION_LONG", globalenv())
+
+library(ggplot2)
+library(grid)
+library(gridExtra)
+
+source("../../rFunctions/PlottingPosteriorsExp1.R")
+source("../../rFunctions/DataProcessingExp1.R")
+source("../../rFunctions/JagsModelFunctionsExp1.R")
+
+#load data
+expData <- read.table( "../data/dataForR.dat", as.is=TRUE )
+names(expData) <- c('subject','condition','subCondition','latency','response')
+expData <- recodeResponses(expData)
+
+plot1 <- vector("list", 4); plot2 <- vector("list",2)
+
+#run for both the short and long CTOA subcondition
+subCondList <- unique(expData$subCondition)
+for( subCond in subCondList ) {
+
+  #create subsection for the two subconditions
+  conditionData <- expData[expData$subCondition==subCond,]
+  
+  if( subCond==CONDITION_SHORT ) {
+    print('SHORT')
+    versionID       <- '1B_short'
+    plotCount       <- 1
+    figIndicators   <-c('A','B')
+  } else if( subCond==CONDITION_LONG ) {
+    print('LONG')
+    versionID       <- '1B_long'
+    plotCount       <- 2
+    figIndicators   <-c('C','D')
+  }
+  
+  load(paste('../outputs/data/jagsOutput', versionID ,'.rData',sep=""))
+  subjSumm <- getSubjectLatData(conditionData)
+  performanceFrame <- caclulateMeanCenteredPerformanceFrame(conditionData, numbBins=8)
+  print(performanceFrame)
+  posteriorPlot <- plotPosteriors(jagsRawData, conditionData)
+  fittingPlot <- plotFits(jagsRawData, performanceFrame, subjSumm$subjectMeans, xMinAxis=150, xMaxAxis=400)
+  
+  plot1[[plotCount]] <- arrangeGrob(posteriorPlot, top = textGrob(figIndicators[1], x = unit(0.05, "npc") , y   = unit(0.95, "npc"), just=c("left","top"), gp=gpar(col="black", fontsize=18)))
+  plot2[[plotCount]] <- arrangeGrob(fittingPlot, top = textGrob(figIndicators[2], x = unit(0.05, "npc") , y   = unit(0.95, "npc"), just=c("left","top"), gp=gpar(col="black", fontsize=18)))
+  
+  grid.arrange(plot1[[plotCount]],plot2[[plotCount]],ncol=2)
+  
+  print(bayesFactors)
+}
+
+figFileName <- "../outputs/manuscriptFigures/figure10.pdf"
+ggsave(figFileName,arrangeGrob(plot1[[1]],plot2[[1]],plot1[[2]],plot2[[2]], ncol=2, nrow=2),width=15,height=10)
+
+grid.arrange(plot1[[1]],plot2[[1]],plot1[[2]],plot2[[2]],ncol=2,nrow=2)

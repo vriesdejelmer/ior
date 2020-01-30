@@ -1,0 +1,46 @@
+
+# Hierarchical Logistic Psychophysical Function
+model{
+
+    ###################################################
+    # Priors
+    mu.delta.alpha ~ dnorm(0, .1)
+    mu.alpha ~ dnorm(0, .1)
+    mu.beta ~ dnorm(0, .1)
+    
+    sigma.delta.alpha ~ dunif(0, 10)
+    sigma.alpha ~ dunif(0, 10)
+    sigma.beta ~ dunif(0,10)
+    
+      # Reparameterize as jags uses precision for normal distributions
+    lambda.delta.alpha <- pow(sigma.delta.alpha, -2)
+    lambda.alpha <- pow(sigma.alpha, -2)
+    lambda.beta <- pow(sigma.beta, -2)
+    ###################################################
+  
+      # Iterate
+    for (i in 1:nSubj){
+      
+    	delta.alpha[i] ~ dnorm(mu.delta.alpha, lambda.delta.alpha)
+    	alpha[i] ~ dnorm(mu.alpha, lambda.alpha)
+    	beta[i] ~ dnorm(mu.beta, lambda.beta)
+    
+        # Parameter priors for each trial
+    	for (j in 1:nTrialsIrr[i]) {
+          logit(theta.conditionIrr[i,j]) <- alpha[i] - delta.alpha[i]/2 + (beta[i] * (latIrr[i,j]-subjectMeans[i]))
+    	    respIrr[i,j] ~ dbern(theta.conditionIrr[i,j])
+    	}
+    	
+    	for (k in 1:nTrialsRel[i]) {
+    	    logit(theta.conditionRel[i,k]) <- alpha[i] + delta.alpha[i]/2 + (beta[i] * (latRel[i,k]-subjectMeans[i]))
+          respRel[i,k] ~ dbern(theta.conditionRel[i,k])
+    	}
+    
+    }
+}
+
+
+
+
+
+

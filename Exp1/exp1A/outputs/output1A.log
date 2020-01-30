@@ -1,0 +1,739 @@
+
+Iterations = 1001:99996
+Thinning interval = 5 
+Number of chains = 5 
+Sample size per chain = 19800 
+
+1. Empirical mean and standard deviation for each variable,
+   plus standard error of the mean:
+
+                      Mean       SD  Naive SE Time-series SE
+alpha[1]           3.82827 0.297629 9.459e-04      2.526e-03
+alpha[10]          5.32933 0.500297 1.590e-03      5.483e-03
+alpha[2]           3.60262 0.289339 9.196e-04      2.301e-03
+alpha[3]           3.52956 0.255243 8.112e-04      1.507e-03
+alpha[4]           3.90251 0.300331 9.545e-04      2.534e-03
+alpha[5]           4.62824 0.478800 1.522e-03      7.410e-03
+alpha[6]           2.65163 0.209061 6.644e-04      1.125e-03
+alpha[7]           2.68937 0.225152 7.156e-04      1.728e-03
+alpha[8]           2.69714 0.197747 6.285e-04      1.048e-03
+alpha[9]           4.94564 0.419274 1.333e-03      4.248e-03
+beta[1]            0.04391 0.005536 1.759e-05      5.433e-05
+beta[10]           0.05305 0.009101 2.892e-05      1.039e-04
+beta[2]            0.04793 0.004919 1.563e-05      4.077e-05
+beta[3]            0.05066 0.006415 2.039e-05      4.228e-05
+beta[4]            0.04985 0.005483 1.743e-05      5.087e-05
+beta[5]            0.06037 0.010888 3.460e-05      1.769e-04
+beta[6]            0.04738 0.004788 1.522e-05      3.017e-05
+beta[7]            0.05427 0.006228 1.979e-05      6.334e-05
+beta[8]            0.04629 0.005324 1.692e-05      3.384e-05
+beta[9]            0.04893 0.005751 1.828e-05      5.899e-05
+delta.alpha[1]     0.02014 0.243063 7.725e-04      1.164e-03
+delta.alpha[10]    0.24066 0.366180 1.164e-03      2.730e-03
+delta.alpha[2]     0.19714 0.239852 7.623e-04      1.529e-03
+delta.alpha[3]     0.13407 0.242167 7.697e-04      1.332e-03
+delta.alpha[4]    -0.09014 0.257720 8.191e-04      1.563e-03
+delta.alpha[5]     0.14868 0.267633 8.506e-04      1.532e-03
+delta.alpha[6]    -0.08892 0.237851 7.559e-04      1.471e-03
+delta.alpha[7]     0.09571 0.209041 6.644e-04      1.143e-03
+delta.alpha[8]     0.03468 0.208038 6.612e-04      1.029e-03
+delta.alpha[9]     0.06166 0.264651 8.411e-04      1.273e-03
+deviance        2099.28554 7.580847 2.409e-02      7.596e-02
+mu.alpha           3.72348 0.406242 1.291e-03      1.822e-03
+mu.beta            0.05027 0.004258 1.353e-05      3.934e-05
+mu.delta.alpha     0.07486 0.162737 5.172e-04      1.044e-03
+
+2. Quantiles for each variable:
+
+                      2.5%        25%        50%       75%     97.5%
+alpha[1]           3.24841    3.62546    3.82872 4.029e+00 4.414e+00
+alpha[10]          4.47331    4.98263    5.28499 5.627e+00 6.446e+00
+alpha[2]           3.04224    3.41132    3.59807 3.790e+00 4.188e+00
+alpha[3]           3.05830    3.35583    3.51794 3.691e+00 4.066e+00
+alpha[4]           3.34432    3.70008    3.88930 4.091e+00 4.536e+00
+alpha[5]           3.88230    4.28309    4.56000 4.905e+00 5.734e+00
+alpha[6]           2.24899    2.51028    2.64837 2.790e+00 3.073e+00
+alpha[7]           2.28765    2.53279    2.67565 2.832e+00 3.171e+00
+alpha[8]           2.31220    2.56264    2.69618 2.829e+00 3.090e+00
+alpha[9]           4.16166    4.66525    4.92924 5.207e+00 5.833e+00
+beta[1]            0.03248    0.04019    0.04430 4.792e-02 5.376e-02
+beta[10]           0.03805    0.04735    0.05153 5.748e-02 7.507e-02
+beta[2]            0.03809    0.04481    0.04798 5.103e-02 5.778e-02
+beta[3]            0.03866    0.04663    0.05017 5.431e-02 6.475e-02
+beta[4]            0.03937    0.04638    0.04959 5.312e-02 6.150e-02
+beta[5]            0.04523    0.05195    0.05839 6.687e-02 8.577e-02
+beta[6]            0.03764    0.04433    0.04751 5.046e-02 5.676e-02
+beta[7]            0.04409    0.04975    0.05353 5.817e-02 6.803e-02
+beta[8]            0.03506    0.04298    0.04663 4.979e-02 5.632e-02
+beta[9]            0.03761    0.04536    0.04878 5.235e-02 6.109e-02
+delta.alpha[1]    -0.50535   -0.11729    0.02992 1.677e-01 4.920e-01
+delta.alpha[10]   -0.28413    0.01101    0.16609 3.911e-01 1.174e+00
+delta.alpha[2]    -0.20228    0.03137    0.16762 3.365e-01 7.426e-01
+delta.alpha[3]    -0.30466   -0.02074    0.11338 2.690e-01 6.796e-01
+delta.alpha[4]    -0.68431   -0.23430   -0.05490 8.446e-02 3.364e-01
+delta.alpha[5]    -0.31906   -0.02095    0.11881 2.880e-01 7.710e-01
+delta.alpha[6]    -0.62854   -0.22711   -0.05966 7.427e-02 3.113e-01
+delta.alpha[7]    -0.30393   -0.03780    0.08698 2.217e-01 5.405e-01
+delta.alpha[8]    -0.39521   -0.09198    0.03799 1.645e-01 4.461e-01
+delta.alpha[9]    -0.48067   -0.08807    0.05762 2.083e-01 6.225e-01
+deviance        2085.02327 2094.03947 2099.14779 2.104e+03 2.115e+03
+mu.alpha           2.91213    3.47467    3.72296 3.972e+00 4.537e+00
+mu.beta            0.04279    0.04753    0.04994 5.264e-02 5.971e-02
+mu.delta.alpha    -0.23343   -0.02986    0.07070 1.743e-01 4.082e-01
+
+Number of chains = 5 
+Number of iterations = 19800 per chain before discarding the burn-in period
+The burn-in period = 10 per chain
+Sample size in total = 98950 
+
+********** The Geweke diagnostic: **********
+Z-scores:
+                        chain1      chain 2    chain 3      chain 4      chain 5
+alpha[1]           0.316864248  0.682136607  0.4100624  1.035408864 -0.213277333
+alpha[10]         -1.042890417 -0.580916613  0.3047015  1.364610893  0.729480556
+alpha[2]          -0.659115779  0.334506406  0.9123310  1.032733254  0.390413057
+alpha[3]          -1.006730670  0.876896090 -1.4635250  0.097396855  0.081997225
+alpha[4]          -1.650228362  1.681891914 -0.3441037  1.142672451 -0.973525480
+alpha[5]          -1.330750615 -0.033364411 -0.8929812 -0.007391372  0.887704841
+alpha[6]           0.623594882  0.710223199  0.9157015  2.789025410 -0.987662693
+alpha[7]          -1.239599407 -0.217005271 -0.3459830  0.613861920  0.262243151
+alpha[8]          -0.623532201 -0.130543545 -0.5333606  3.264336158 -1.048308976
+alpha[9]          -1.342192028  1.442543956 -1.2574757  1.668061881  1.623009357
+beta[1]            0.374035387  0.811367170  1.1966941  1.449537196  0.188321541
+beta[10]          -1.276601120 -0.199219560 -0.3216643  1.188460697  0.833638078
+beta[2]           -0.488661838  0.664544605  0.6810019  1.222940557  0.006307517
+beta[3]           -0.580974031  0.615838031 -1.1822222  0.715088339 -0.393755908
+beta[4]           -1.413078602  1.158951183 -0.3454023  0.967427210 -0.645020156
+beta[5]           -1.084063858 -0.212419422 -1.0101182  0.054853259  0.882508281
+beta[6]            0.003788623  1.318553326  1.2875884  2.582725530 -1.057501047
+beta[7]           -1.770639172  0.170557128 -0.6017737  0.774833207  0.276108911
+beta[8]           -0.844194679  0.383414642 -0.2731476  3.124117259 -1.337335087
+beta[9]           -1.008265976  1.370969852 -1.4174906  1.811185180  1.652788957
+delta.alpha[1]     0.451710765 -1.385777382  1.2110914 -0.729734894 -1.607040820
+delta.alpha[10]   -1.834182565 -1.801351593  0.8631802 -1.231438376 -0.806182199
+delta.alpha[2]    -0.498953965 -3.469734285  0.8951434 -2.273505390 -0.455334093
+delta.alpha[3]    -0.211066201 -1.087698914  1.6731528 -2.063043465 -1.601005731
+delta.alpha[4]     0.253130994  0.945905238  0.0518775 -0.015088618 -0.515876617
+delta.alpha[5]    -1.051399027 -2.043067082  2.4418031 -1.968622452 -1.385432883
+delta.alpha[6]     2.027779834 -0.005024842 -0.6837500 -0.208238781 -0.420534560
+delta.alpha[7]     0.797153837 -2.413670791  2.1339675 -1.378826042 -2.588351788
+delta.alpha[8]     0.196570495 -1.901361430  0.5908527 -2.409953566 -0.267112215
+delta.alpha[9]    -0.133333038 -2.042264731  0.4106507 -1.252174168 -0.656356735
+deviance           1.609851768  0.537086068  0.2960323  0.619053754 -1.123942684
+mu.alpha          -1.285079706  0.295566712  0.5308474  2.109828795  0.471032752
+mu.beta           -1.627329898  0.837760913 -0.5900918  1.569934848  0.799097689
+mu.delta.alpha    -0.062572142 -2.721718759  1.6748915 -2.255692116 -1.181948134
+Window From Start  0.100000000  0.785850000  0.5518600  0.612120000  0.689580000
+Window From Stop   0.500000000  0.159290000  0.4037000  0.022160000  0.040090000
+
+********** The Gelman-Rubin diagnostic: **********
+Potential scale reduction factors:
+
+                Point est. Upper C.I.
+alpha[1]                 1          1
+alpha[10]                1          1
+alpha[2]                 1          1
+alpha[3]                 1          1
+alpha[4]                 1          1
+alpha[5]                 1          1
+alpha[6]                 1          1
+alpha[7]                 1          1
+alpha[8]                 1          1
+alpha[9]                 1          1
+beta[1]                  1          1
+beta[10]                 1          1
+beta[2]                  1          1
+beta[3]                  1          1
+beta[4]                  1          1
+beta[5]                  1          1
+beta[6]                  1          1
+beta[7]                  1          1
+beta[8]                  1          1
+beta[9]                  1          1
+delta.alpha[1]           1          1
+delta.alpha[10]          1          1
+delta.alpha[2]           1          1
+delta.alpha[3]           1          1
+delta.alpha[4]           1          1
+delta.alpha[5]           1          1
+delta.alpha[6]           1          1
+delta.alpha[7]           1          1
+delta.alpha[8]           1          1
+delta.alpha[9]           1          1
+deviance                 1          1
+mu.alpha                 1          1
+mu.beta                  1          1
+mu.delta.alpha           1          1
+
+Multivariate psrf
+
+1
+
+********** The Heidelberger-Welch diagnostic: **********
+
+Chain 1, epsilon=0.1, alpha=0.05                                              
+                Stationarity start     p-value
+                test         iteration        
+alpha[1]        passed        1        0.9668 
+alpha[10]       passed        1        0.5414 
+alpha[2]        passed        1        0.9317 
+alpha[3]        passed        1        0.5822 
+alpha[4]        passed        1        0.4831 
+alpha[5]        passed        1        0.7250 
+alpha[6]        passed        1        0.7486 
+alpha[7]        passed        1        0.1403 
+alpha[8]        passed        1        0.2321 
+alpha[9]        passed        1        0.2174 
+beta[1]         passed        1        0.9777 
+beta[10]        passed        1        0.4979 
+beta[2]         passed        1        0.9917 
+beta[3]         passed        1        0.8585 
+beta[4]         passed        1        0.3961 
+beta[5]         passed        1        0.7732 
+beta[6]         passed        1        0.7383 
+beta[7]         passed        1        0.2557 
+beta[8]         passed        1        0.1391 
+beta[9]         passed        1        0.3077 
+delta.alpha[1]  passed        1        0.7245 
+delta.alpha[10] failed       NA        0.0164 
+delta.alpha[2]  passed        1        0.3357 
+delta.alpha[3]  passed        1        0.1435 
+delta.alpha[4]  passed        1        0.3226 
+delta.alpha[5]  passed        1        0.1597 
+delta.alpha[6]  passed        1        0.1379 
+delta.alpha[7]  passed        1        0.6584 
+delta.alpha[8]  passed        1        0.7694 
+delta.alpha[9]  passed        1        0.9910 
+deviance        passed        1        0.6372 
+mu.alpha        passed        1        0.7080 
+mu.beta         passed        1        0.5554 
+mu.delta.alpha  passed        1        0.5837 
+                                             
+                Halfwidth Mean      Halfwidth
+                test                         
+alpha[1]        passed       3.8331 0.010705 
+alpha[10]       passed       5.3180 0.027675 
+alpha[2]        passed       3.5931 0.009829 
+alpha[3]        passed       3.5259 0.006430 
+alpha[4]        passed       3.8917 0.010555 
+alpha[5]        passed       4.6062 0.032786 
+alpha[6]        passed       2.6522 0.004788 
+alpha[7]        passed       2.6784 0.007721 
+alpha[8]        passed       2.6960 0.004354 
+alpha[9]        passed       4.9319 0.018245 
+beta[1]         passed       0.0440 0.000231 
+beta[10]        passed       0.0529 0.000532 
+beta[2]         passed       0.0478 0.000172 
+beta[3]         passed       0.0505 0.000189 
+beta[4]         passed       0.0496 0.000218 
+beta[5]         passed       0.0599 0.000788 
+beta[6]         passed       0.0473 0.000128 
+beta[7]         passed       0.0539 0.000265 
+beta[8]         passed       0.0462 0.000141 
+beta[9]         passed       0.0487 0.000255 
+delta.alpha[1]  failed       0.0194 0.004744 
+delta.alpha[10] <NA>             NA       NA 
+delta.alpha[2]  passed       0.1966 0.006522 
+delta.alpha[3]  passed       0.1356 0.005704 
+delta.alpha[4]  passed      -0.0892 0.006487 
+delta.alpha[5]  passed       0.1485 0.006426 
+delta.alpha[6]  passed      -0.0902 0.006229 
+delta.alpha[7]  passed       0.0950 0.004809 
+delta.alpha[8]  failed       0.0352 0.004299 
+delta.alpha[9]  passed       0.0631 0.005319 
+deviance        passed    2099.5670 0.324800 
+mu.alpha        passed       3.7156 0.007998 
+mu.beta         passed       0.0501 0.000175 
+mu.delta.alpha  passed       0.0743 0.004369 
+
+Chain 2, epsilon=0.183, alpha=0.005                                              
+                Stationarity start     p-value
+                test         iteration        
+alpha[1]        passed       1         0.355  
+alpha[10]       passed       1         0.496  
+alpha[2]        passed       1         0.717  
+alpha[3]        passed       1         0.645  
+alpha[4]        passed       1         0.550  
+alpha[5]        passed       1         0.666  
+alpha[6]        passed       1         0.891  
+alpha[7]        passed       1         0.714  
+alpha[8]        passed       1         0.661  
+alpha[9]        passed       1         0.308  
+beta[1]         passed       1         0.558  
+beta[10]        passed       1         0.918  
+beta[2]         passed       1         0.874  
+beta[3]         passed       1         0.512  
+beta[4]         passed       1         0.609  
+beta[5]         passed       1         0.538  
+beta[6]         passed       1         0.539  
+beta[7]         passed       1         0.809  
+beta[8]         passed       1         0.578  
+beta[9]         passed       1         0.298  
+delta.alpha[1]  passed       1         0.417  
+delta.alpha[10] passed       1         0.735  
+delta.alpha[2]  passed       1         0.131  
+delta.alpha[3]  passed       1         0.554  
+delta.alpha[4]  passed       1         0.408  
+delta.alpha[5]  passed       1         0.537  
+delta.alpha[6]  passed       1         0.962  
+delta.alpha[7]  passed       1         0.528  
+delta.alpha[8]  passed       1         0.358  
+delta.alpha[9]  passed       1         0.354  
+deviance        passed       1         0.718  
+mu.alpha        passed       1         0.911  
+mu.beta         passed       1         0.790  
+mu.delta.alpha  passed       1         0.223  
+                                             
+                Halfwidth Mean      Halfwidth
+                test                         
+alpha[1]        passed       3.8280 0.011131 
+alpha[10]       passed       5.3328 0.023170 
+alpha[2]        passed       3.6127 0.010089 
+alpha[3]        passed       3.5310 0.006590 
+alpha[4]        passed       3.9008 0.011027 
+alpha[5]        passed       4.6370 0.032777 
+alpha[6]        passed       2.6517 0.004981 
+alpha[7]        passed       2.6910 0.008079 
+alpha[8]        passed       2.6971 0.004959 
+alpha[9]        passed       4.9514 0.020393 
+beta[1]         passed       0.0439 0.000248 
+beta[10]        passed       0.0531 0.000433 
+beta[2]         passed       0.0481 0.000179 
+beta[3]         passed       0.0506 0.000179 
+beta[4]         passed       0.0498 0.000219 
+beta[5]         passed       0.0605 0.000780 
+beta[6]         passed       0.0474 0.000135 
+beta[7]         passed       0.0543 0.000288 
+beta[8]         passed       0.0463 0.000151 
+beta[9]         passed       0.0490 0.000281 
+delta.alpha[1]  failed       0.0218 0.005059 
+delta.alpha[10] passed       0.2477 0.010999 
+delta.alpha[2]  passed       0.2026 0.006501 
+delta.alpha[3]  passed       0.1363 0.005435 
+delta.alpha[4]  passed      -0.0907 0.006762 
+delta.alpha[5]  passed       0.1555 0.006699 
+delta.alpha[6]  passed      -0.0890 0.006013 
+delta.alpha[7]  passed       0.1004 0.004903 
+delta.alpha[8]  passed       0.0352 0.004522 
+delta.alpha[9]  passed       0.0639 0.005510 
+deviance        passed    2099.3036 0.341985 
+mu.alpha        passed       3.7198 0.007945 
+mu.beta         passed       0.0503 0.000171 
+mu.delta.alpha  passed       0.0780 0.004625 
+
+Chain 3, epsilon=0.069, alpha=0.1                                              
+                Stationarity start     p-value
+                test         iteration        
+alpha[1]        passed          1      0.680  
+alpha[10]       passed          1      0.633  
+alpha[2]        passed          1      0.460  
+alpha[3]        passed       7917      0.172  
+alpha[4]        passed          1      0.941  
+alpha[5]        passed          1      0.484  
+alpha[6]        passed       3959      0.163  
+alpha[7]        passed          1      0.819  
+alpha[8]        passed          1      0.297  
+alpha[9]        passed          1      0.594  
+beta[1]         passed          1      0.216  
+beta[10]        passed          1      0.748  
+beta[2]         passed          1      0.493  
+beta[3]         passed          1      0.233  
+beta[4]         passed          1      0.922  
+beta[5]         passed          1      0.347  
+beta[6]         passed       3959      0.173  
+beta[7]         passed          1      0.618  
+beta[8]         passed          1      0.397  
+beta[9]         passed          1      0.479  
+delta.alpha[1]  passed          1      0.370  
+delta.alpha[10] passed          1      0.597  
+delta.alpha[2]  passed          1      0.746  
+delta.alpha[3]  passed          1      0.147  
+delta.alpha[4]  passed          1      0.748  
+delta.alpha[5]  passed          1      0.115  
+delta.alpha[6]  passed          1      0.859  
+delta.alpha[7]  passed       7917      0.123  
+delta.alpha[8]  passed          1      0.217  
+delta.alpha[9]  passed          1      0.547  
+deviance        passed          1      0.504  
+mu.alpha        passed          1      0.502  
+mu.beta         passed          1      0.785  
+mu.delta.alpha  passed       5938      0.231  
+                                             
+                Halfwidth Mean      Halfwidth
+                test                         
+alpha[1]        passed       3.8258 0.011107 
+alpha[10]       passed       5.3441 0.023245 
+alpha[2]        passed       3.5969 0.009967 
+alpha[3]        passed       3.5322 0.008446 
+alpha[4]        passed       3.9094 0.011561 
+alpha[5]        passed       4.6391 0.032105 
+alpha[6]        passed       2.6503 0.005342 
+alpha[7]        passed       2.6942 0.007172 
+alpha[8]        passed       2.6968 0.004585 
+alpha[9]        passed       4.9494 0.017608 
+beta[1]         passed       0.0439 0.000219 
+beta[10]        passed       0.0533 0.000413 
+beta[2]         passed       0.0478 0.000176 
+beta[3]         passed       0.0507 0.000182 
+beta[4]         passed       0.0500 0.000236 
+beta[5]         passed       0.0607 0.000760 
+beta[6]         passed       0.0474 0.000151 
+beta[7]         passed       0.0544 0.000278 
+beta[8]         passed       0.0463 0.000146 
+beta[9]         passed       0.0489 0.000258 
+delta.alpha[1]  failed       0.0190 0.005016 
+delta.alpha[10] passed       0.2469 0.014123 
+delta.alpha[2]  passed       0.1995 0.006902 
+delta.alpha[3]  passed       0.1379 0.005965 
+delta.alpha[4]  failed      -0.0963 0.007272 
+delta.alpha[5]  passed       0.1509 0.006957 
+delta.alpha[6]  failed      -0.0941 0.006695 
+delta.alpha[7]  passed       0.0911 0.006287 
+delta.alpha[8]  failed       0.0309 0.004258 
+delta.alpha[9]  failed       0.0603 0.005308 
+deviance        passed    2099.0606 0.324908 
+mu.alpha        passed       3.7309 0.007804 
+mu.beta         passed       0.0504 0.000171 
+mu.delta.alpha  failed       0.0719 0.005185 
+
+Chain 4, epsilon=0.038, alpha=0.1                                              
+                Stationarity start     p-value
+                test         iteration        
+alpha[1]        passed          1      0.4378 
+alpha[10]       passed          1      0.7072 
+alpha[2]        passed          1      0.3511 
+alpha[3]        passed          1      0.6851 
+alpha[4]        passed          1      0.7464 
+alpha[5]        passed          1      0.6430 
+alpha[6]        passed          1      0.4125 
+alpha[7]        passed          1      0.4696 
+alpha[8]        failed         NA      0.0285 
+alpha[9]        passed          1      0.3273 
+beta[1]         passed          1      0.8567 
+beta[10]        passed          1      0.8937 
+beta[2]         passed          1      0.2072 
+beta[3]         passed          1      0.8691 
+beta[4]         passed          1      0.6514 
+beta[5]         passed          1      0.7458 
+beta[6]         passed          1      0.3854 
+beta[7]         passed          1      0.6930 
+beta[8]         failed         NA      0.0524 
+beta[9]         passed          1      0.3900 
+delta.alpha[1]  passed          1      0.8153 
+delta.alpha[10] passed          1      0.2459 
+delta.alpha[2]  passed          1      0.4430 
+delta.alpha[3]  passed          1      0.5084 
+delta.alpha[4]  passed          1      0.1127 
+delta.alpha[5]  passed       3959      0.3445 
+delta.alpha[6]  passed          1      0.8123 
+delta.alpha[7]  passed          1      0.4604 
+delta.alpha[8]  passed          1      0.5500 
+delta.alpha[9]  passed          1      0.5415 
+deviance        passed          1      0.5959 
+mu.alpha        passed          1      0.5705 
+mu.beta         passed          1      0.9000 
+mu.delta.alpha  passed          1      0.6774 
+                                             
+                Halfwidth Mean      Halfwidth
+                test                         
+alpha[1]        passed       3.8257 0.011193 
+alpha[10]       passed       5.3291 0.022015 
+alpha[2]        passed       3.6044 0.010199 
+alpha[3]        passed       3.5337 0.006412 
+alpha[4]        passed       3.9038 0.011544 
+alpha[5]        passed       4.6350 0.030238 
+alpha[6]        passed       2.6523 0.004984 
+alpha[7]        passed       2.6961 0.007222 
+alpha[8]        <NA>             NA       NA 
+alpha[9]        passed       4.9427 0.018460 
+beta[1]         passed       0.0438 0.000233 
+beta[10]        passed       0.0531 0.000430 
+beta[2]         passed       0.0480 0.000178 
+beta[3]         passed       0.0508 0.000175 
+beta[4]         passed       0.0499 0.000224 
+beta[5]         passed       0.0606 0.000726 
+beta[6]         passed       0.0474 0.000128 
+beta[7]         passed       0.0545 0.000266 
+beta[8]         <NA>             NA       NA 
+beta[9]         passed       0.0489 0.000249 
+delta.alpha[1]  failed       0.0201 0.005016 
+delta.alpha[10] failed       0.2402 0.011827 
+delta.alpha[2]  passed       0.1950 0.006739 
+delta.alpha[3]  failed       0.1307 0.005876 
+delta.alpha[4]  failed      -0.0883 0.006808 
+delta.alpha[5]  failed       0.1477 0.007404 
+delta.alpha[6]  failed      -0.0852 0.006583 
+delta.alpha[7]  failed       0.0943 0.005222 
+delta.alpha[8]  failed       0.0363 0.004681 
+delta.alpha[9]  failed       0.0630 0.005278 
+deviance        passed    2099.1167 0.313835 
+mu.alpha        passed       3.7268 0.008196 
+mu.beta         passed       0.0503 0.000166 
+mu.delta.alpha  failed       0.0749 0.004504 
+
+Chain 5, epsilon=0.107, alpha=0.1                                              
+                Stationarity start     p-value
+                test         iteration        
+alpha[1]        passed          1      0.163  
+alpha[10]       passed          1      0.999  
+alpha[2]        passed          1      0.719  
+alpha[3]        passed          1      0.552  
+alpha[4]        passed          1      0.956  
+alpha[5]        passed          1      0.944  
+alpha[6]        passed       1980      0.101  
+alpha[7]        passed          1      0.196  
+alpha[8]        passed          1      0.718  
+alpha[9]        passed          1      0.934  
+beta[1]         passed          1      0.565  
+beta[10]        passed          1      0.861  
+beta[2]         passed          1      0.333  
+beta[3]         passed          1      0.638  
+beta[4]         passed          1      0.910  
+beta[5]         passed          1      0.925  
+beta[6]         passed          1      0.103  
+beta[7]         passed          1      0.382  
+beta[8]         passed          1      0.385  
+beta[9]         passed          1      0.898  
+delta.alpha[1]  passed          1      0.357  
+delta.alpha[10] passed          1      0.947  
+delta.alpha[2]  passed          1      0.614  
+delta.alpha[3]  passed          1      0.474  
+delta.alpha[4]  passed          1      0.831  
+delta.alpha[5]  passed          1      0.666  
+delta.alpha[6]  passed          1      0.720  
+delta.alpha[7]  passed          1      0.694  
+delta.alpha[8]  passed          1      0.354  
+delta.alpha[9]  passed          1      0.619  
+deviance        passed          1      0.959  
+mu.alpha        passed          1      0.759  
+mu.beta         passed          1      0.608  
+mu.delta.alpha  passed          1      0.419  
+                                             
+                Halfwidth Mean      Halfwidth
+                test                         
+alpha[1]        passed       3.8287 0.011019 
+alpha[10]       passed       5.3229 0.023691 
+alpha[2]        passed       3.6060 0.010343 
+alpha[3]        passed       3.5280 0.006991 
+alpha[4]        passed       3.9070 0.010837 
+alpha[5]        passed       4.6245 0.034343 
+alpha[6]        passed       2.6507 0.005472 
+alpha[7]        passed       2.6870 0.007639 
+alpha[8]        passed       2.6971 0.004584 
+alpha[9]        passed       4.9532 0.018271 
+beta[1]         passed       0.0439 0.000257 
+beta[10]        passed       0.0529 0.000460 
+beta[2]         passed       0.0480 0.000188 
+beta[3]         passed       0.0507 0.000201 
+beta[4]         passed       0.0499 0.000218 
+beta[5]         passed       0.0602 0.000812 
+beta[6]         passed       0.0473 0.000137 
+beta[7]         passed       0.0542 0.000280 
+beta[8]         passed       0.0463 0.000155 
+beta[9]         passed       0.0491 0.000249 
+delta.alpha[1]  failed       0.0204 0.005412 
+delta.alpha[10] passed       0.2347 0.012007 
+delta.alpha[2]  passed       0.1918 0.006829 
+delta.alpha[3]  passed       0.1299 0.006195 
+delta.alpha[4]  passed      -0.0862 0.006911 
+delta.alpha[5]  passed       0.1447 0.007137 
+delta.alpha[6]  passed      -0.0860 0.006627 
+delta.alpha[7]  passed       0.0947 0.005358 
+delta.alpha[8]  failed       0.0359 0.004731 
+delta.alpha[9]  failed       0.0580 0.006318 
+deviance        passed    2099.3755 0.357660 
+mu.alpha        passed       3.7243 0.008002 
+mu.beta         passed       0.0503 0.000179 
+mu.delta.alpha  passed       0.0731 0.004981 
+
+********** The Raftery-Lewis diagnostic: **********
+
+Chain 1, converge.eps = 0.001
+Quantile (q) = 0.025
+Accuracy (r) = +/- 0.005
+Probability (s) = 0.95 
+                                                       
+                 Burn-in  Total Lower bound  Dependence
+                 (M)      (N)   (Nmin)       factor (I)
+ alpha[1]        6        8652  3746         2.31      
+ alpha[10]       6        8854  3746         2.36      
+ alpha[2]        8        9672  3746         2.58      
+ alpha[3]        6        9032  3746         2.41      
+ alpha[4]        10       11072 3746         2.96      
+ alpha[5]        8        8686  3746         2.32      
+ alpha[6]        3        4591  3746         1.23      
+ alpha[7]        3        4366  3746         1.17      
+ alpha[8]        3        4348  3746         1.16      
+ alpha[9]        10       12038 3746         3.21      
+ beta[1]         8        9674  3746         2.58      
+ beta[10]        9        12306 3746         3.29      
+ beta[2]         12       15174 3746         4.05      
+ beta[3]         4        5144  3746         1.37      
+ beta[4]         10       11682 3746         3.12      
+ beta[5]         15       16599 3746         4.43      
+ beta[6]         4        5166  3746         1.38      
+ beta[7]         9        13035 3746         3.48      
+ beta[8]         6        8484  3746         2.26      
+ beta[9]         15       16842 3746         4.50      
+ delta.alpha[1]  3        4330  3746         1.16      
+ delta.alpha[10] 3        4154  3746         1.11      
+ delta.alpha[2]  4        7426  3746         1.98      
+ delta.alpha[3]  3        4069  3746         1.09      
+ delta.alpha[4]  6        7984  3746         2.13      
+ delta.alpha[5]  3        4119  3746         1.10      
+ delta.alpha[6]  3        4102  3746         1.10      
+ delta.alpha[7]  2        3951  3746         1.05      
+ delta.alpha[8]  3        4154  3746         1.11      
+ delta.alpha[9]  3        4171  3746         1.11      
+ deviance        12       17316 3746         4.62      
+ mu.alpha        2        3935  3746         1.05      
+ mu.beta         6        8182  3746         2.18      
+ mu.delta.alpha  6        8848  3746         2.36      
+
+
+Chain 2, converge.eps = 0.0025
+Quantile (q) = 0.001
+Accuracy (r) = +/- 0.005
+Probability (s) = 0.999 
+                                                       
+                 Burn-in  Total Lower bound  Dependence
+                 (M)      (N)   (Nmin)       factor (I)
+ alpha[1]        1        438   433          1.01      
+ alpha[10]       4        595   433          1.37      
+ alpha[2]        4        595   433          1.37      
+ alpha[3]        1        438   433          1.01      
+ alpha[4]        5        733   433          1.69      
+ alpha[5]        2        485   433          1.12      
+ alpha[6]        2        485   433          1.12      
+ alpha[7]        1        438   433          1.01      
+ alpha[8]        1        438   433          1.01      
+ alpha[9]        5        733   433          1.69      
+ beta[1]         1        438   433          1.01      
+ beta[10]        4        659   433          1.52      
+ beta[2]         5        733   433          1.69      
+ beta[3]         2        485   433          1.12      
+ beta[4]         6        913   433          2.11      
+ beta[5]         2        485   433          1.12      
+ beta[6]         2        485   433          1.12      
+ beta[7]         1        438   433          1.01      
+ beta[8]         1        438   433          1.01      
+ beta[9]         4        659   433          1.52      
+ delta.alpha[1]  2        485   433          1.12      
+ delta.alpha[10] 1        438   433          1.01      
+ delta.alpha[2]  1        438   433          1.01      
+ delta.alpha[3]  1        438   433          1.01      
+ delta.alpha[4]  2        485   433          1.12      
+ delta.alpha[5]  2        485   433          1.12      
+ delta.alpha[6]  1        438   433          1.01      
+ delta.alpha[7]  1        438   433          1.01      
+ delta.alpha[8]  2        485   433          1.12      
+ delta.alpha[9]  1        438   433          1.01      
+ deviance        1        438   433          1.01      
+ mu.alpha        1        438   433          1.01      
+ mu.beta         1        438   433          1.01      
+ mu.delta.alpha  1        438   433          1.01      
+
+
+Chain 3, converge.eps = 0.0025
+Quantile (q) = 0.001
+Accuracy (r) = +/- 0.005
+Probability (s) = 0.99 
+                                                       
+                 Burn-in  Total Lower bound  Dependence
+                 (M)      (N)   (Nmin)       factor (I)
+ alpha[1]        3        330   266          1.24      
+ alpha[10]       3        330   266          1.24      
+ alpha[2]        3        330   266          1.24      
+ alpha[3]        2        298   266          1.12      
+ alpha[4]        2        298   266          1.12      
+ alpha[5]        3        330   266          1.24      
+ alpha[6]        1        269   266          1.01      
+ alpha[7]        1        269   266          1.01      
+ alpha[8]        1        269   266          1.01      
+ alpha[9]        2        298   266          1.12      
+ beta[1]         2        298   266          1.12      
+ beta[10]        3        330   266          1.24      
+ beta[2]         4        406   266          1.53      
+ beta[3]         1        269   266          1.01      
+ beta[4]         5        451   266          1.70      
+ beta[5]         3        330   266          1.24      
+ beta[6]         2        298   266          1.12      
+ beta[7]         1        269   266          1.01      
+ beta[8]         1        269   266          1.01      
+ beta[9]         4        366   266          1.38      
+ delta.alpha[1]  1        269   266          1.01      
+ delta.alpha[10] 1        269   266          1.01      
+ delta.alpha[2]  1        269   266          1.01      
+ delta.alpha[3]  1        269   266          1.01      
+ delta.alpha[4]  1        269   266          1.01      
+ delta.alpha[5]  1        269   266          1.01      
+ delta.alpha[6]  1        269   266          1.01      
+ delta.alpha[7]  1        269   266          1.01      
+ delta.alpha[8]  2        298   266          1.12      
+ delta.alpha[9]  1        269   266          1.01      
+ deviance        1        269   266          1.01      
+ mu.alpha        1        269   266          1.01      
+ mu.beta         1        269   266          1.01      
+ mu.delta.alpha  2        298   266          1.12      
+
+
+Chain 4, converge.eps = 5e-04
+Quantile (q) = 0.1
+Accuracy (r) = +/- 0.001
+Probability (s) = 0.99 
+
+You need a sample size of at least 597141 with these values of q, r and s
+
+Chain 5, converge.eps = 2e-04
+Quantile (q) = 0.1
+Accuracy (r) = +/- 0.005
+Probability (s) = 0.999 
+
+You need a sample size of at least 38980 with these values of q, r and s
+
+
+Inference for Bugs model at "../../rFunctions/jagsModel1A.txt", fit using jags,
+ 5 chains, each with 1e+05 iterations (first 1000 discarded), n.thin = 5
+ n.sims = 99000 iterations saved
+                 mu.vect sd.vect     2.5%      25%      50%      75%    97.5%  Rhat n.eff
+alpha[1]           3.828   0.298    3.248    3.625    3.829    4.029    4.414 1.001 48000
+alpha[2]           3.603   0.289    3.042    3.411    3.598    3.790    4.188 1.001  7000
+alpha[3]           3.530   0.255    3.058    3.356    3.518    3.691    4.066 1.001 38000
+alpha[4]           3.903   0.300    3.344    3.700    3.889    4.091    4.536 1.001  9500
+alpha[5]           4.628   0.479    3.882    4.283    4.560    4.905    5.734 1.001  5700
+alpha[6]           2.652   0.209    2.249    2.510    2.648    2.790    3.073 1.001 99000
+alpha[7]           2.689   0.225    2.288    2.533    2.676    2.832    3.171 1.002  5200
+alpha[8]           2.697   0.198    2.312    2.563    2.696    2.829    3.090 1.001 99000
+alpha[9]           4.946   0.419    4.162    4.665    4.929    5.207    5.833 1.001 12000
+alpha[10]          5.329   0.500    4.473    4.983    5.285    5.627    6.446 1.001 11000
+beta[1]            0.044   0.006    0.032    0.040    0.044    0.048    0.054 1.001 41000
+beta[2]            0.048   0.005    0.038    0.045    0.048    0.051    0.058 1.001  6900
+beta[3]            0.051   0.006    0.039    0.047    0.050    0.054    0.065 1.001 26000
+beta[4]            0.050   0.005    0.039    0.046    0.050    0.053    0.062 1.001  6800
+beta[5]            0.060   0.011    0.045    0.052    0.058    0.067    0.086 1.002  4700
+beta[6]            0.047   0.005    0.038    0.044    0.048    0.050    0.057 1.001 45000
+beta[7]            0.054   0.006    0.044    0.050    0.054    0.058    0.068 1.002  4400
+beta[8]            0.046   0.005    0.035    0.043    0.047    0.050    0.056 1.001 99000
+beta[9]            0.049   0.006    0.038    0.045    0.049    0.052    0.061 1.001  9400
+beta[10]           0.053   0.009    0.038    0.047    0.052    0.057    0.075 1.001 12000
+delta.alpha[1]     0.020   0.243   -0.505   -0.117    0.030    0.168    0.492 1.001 99000
+delta.alpha[2]     0.197   0.240   -0.202    0.031    0.168    0.337    0.743 1.001 16000
+delta.alpha[3]     0.134   0.242   -0.305   -0.021    0.113    0.269    0.680 1.001 23000
+delta.alpha[4]    -0.090   0.258   -0.684   -0.234   -0.055    0.084    0.336 1.001 23000
+delta.alpha[5]     0.149   0.268   -0.319   -0.021    0.119    0.288    0.771 1.001 16000
+delta.alpha[6]    -0.089   0.238   -0.629   -0.227   -0.060    0.074    0.311 1.001 22000
+delta.alpha[7]     0.096   0.209   -0.304   -0.038    0.087    0.222    0.541 1.001 30000
+delta.alpha[8]     0.035   0.208   -0.395   -0.092    0.038    0.165    0.446 1.001 47000
+delta.alpha[9]     0.062   0.265   -0.481   -0.088    0.058    0.208    0.622 1.001 58000
+delta.alpha[10]    0.241   0.366   -0.284    0.011    0.166    0.391    1.174 1.001 15000
+mu.alpha           3.723   0.406    2.912    3.475    3.723    3.972    4.537 1.001 23000
+mu.beta            0.050   0.004    0.043    0.048    0.050    0.053    0.060 1.001  9200
+mu.delta.alpha     0.075   0.163   -0.233   -0.030    0.071    0.174    0.408 1.001 38000
+deviance        2099.286   7.581 2085.023 2094.039 2099.148 2104.251 2114.683 1.001  6800
+
+For each parameter, n.eff is a crude measure of effective sample size,
+and Rhat is the potential scale reduction factor (at convergence, Rhat=1).
+
+DIC info (using the rule, pD = var(deviance)/2)
+pD = 28.7 and DIC = 2128.0
+DIC is an estimate of expected predictive error (lower deviance is better).
